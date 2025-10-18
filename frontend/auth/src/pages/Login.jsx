@@ -29,7 +29,7 @@ const Login = () => {
             return handleError('email, password are required');
         }
         try{
-            const url = "https://jwt-authentication-authorization.vercel.app/login";
+            const url = "https://jwt-authentication-authorization.vercel.app/auth/login";
             const response = await fetch(url, {
                 method: "POST",
                 headers: {
